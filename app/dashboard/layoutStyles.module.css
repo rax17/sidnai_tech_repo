@@ -1,0 +1,36 @@
+.dashboard {
+
+    width: 100%;
+    text-align: center;
+
+  }
+
+  .mainContainer {
+   
+    padding: 40px 20px 20px 40px;
+    width: 70%;
+    float: left;
+    flex-grow: 8;
+    order: 1;
+}
+
+
+.sideContainer {
+
+  padding: 40px 20px 20px 40px;
+  width: 30%;
+  float: right;
+  right: auto;
+  flex-grow: 8;
+  order: 1;
+}
+
+
+.topnavCentered {
+  float: none;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
