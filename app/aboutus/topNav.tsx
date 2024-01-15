@@ -1,6 +1,7 @@
 import React from 'react'
 import Link from 'next/link';
 import styles from './topNav.module.css'
+import Image from 'next/image';
 const topNav = () => {
   return (
     <div>
@@ -8,7 +9,17 @@ const topNav = () => {
         <div className="flex-1">
         <div className="avatar">
   <div className="w-24 rounded-full">
-    <img src="sidnai.png" />
+   
+
+    <Image
+      src="/sidnai.png"
+      width={500}
+      height={500}
+      alt="Picture of the guitarTeach"
+      className={styles.responsiveImg}
+    />
+
+
   </div></div>
           <a className="btn btn-ghost text-xl text-pretty" href="/dashboard">Sidnai Advance Tech. </a>
         </div>

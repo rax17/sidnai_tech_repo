@@ -8,10 +8,8 @@ export default function Home() {
   return (
 
     <main>
-     <TopNav/>
-    <Link href='/users'>Users</Link>
-    <AddToCart/>
-    
+
+
     </main>
   )
 }

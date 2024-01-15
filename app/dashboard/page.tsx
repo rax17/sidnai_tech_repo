@@ -3,6 +3,7 @@ import React from 'react'
 
 import styles from './layoutStyles.module.css'
 import Link from 'next/link';
+import Image from 'next/image';
 
 const userDashboardPage = () => {
   return (
@@ -10,10 +11,17 @@ const userDashboardPage = () => {
 
       <div className="navbar bg-indigo-200 text-primary-content">
         <div className="flex-1">
-
         <div className="avatar">
   <div className="w-24 rounded-full">
-    <img src="sidnai.png" />
+   
+
+    <Image
+      src="/sidnai.png"
+      width={500}
+      height={500}
+      alt="Picture of the sidnai"
+    />
+
   </div></div>
           <a className="btn btn-ghost text-xl text-pretty" href="/dashboard">Sidnai Advance Tech. </a>
         </div>
@@ -73,7 +81,18 @@ const userDashboardPage = () => {
                 <td>
 
                   <div className="card lg:card-side bg-base-100 shadow-xl">
-                    <figure><img src="namste.png" alt="hindi" className={styles.responsiveImg} /></figure>
+                    <figure>
+                    
+                      
+                      <Image
+      src="/namste.png"
+      width={500}
+      height={500}
+      alt="Picture of the hindi"
+      className={styles.responsiveImg}
+    />
+                      
+                      </figure>
                     <div className="card-body">
                       <h2 className="card-title">Learn Hindi</h2>
                       <p>Level 1</p>
@@ -94,7 +113,19 @@ const userDashboardPage = () => {
                 <td>
 
                   <div className="card lg:card-side bg-base-100 shadow-xl">
-                    <figure><img src="singing.png" alt="hindi" className={styles.responsiveImg} /></figure>
+                    <figure>
+                    
+                       
+                      <Image
+      src="/singing.png"
+      width={500}
+      height={500}
+      alt="Picture of the singing"
+      className={styles.responsiveImg}
+    />
+                      
+                      
+                      </figure>
                     <div className="card-body">
                       <h2 className="card-title">Learn Singing</h2>
                       <p>Level 1</p>
@@ -116,7 +147,18 @@ const userDashboardPage = () => {
                 <td>
 
                   <div className="card lg:card-side bg-base-100 shadow-xl">
-                    <figure><img src="painting.png" alt="painting" className={styles.responsiveImg} /></figure>
+                    <figure>
+                      
+               
+                      <Image
+      src="/painting.png"
+      width={500}
+      height={500}
+      alt="Picture of the painting"
+      className={styles.responsiveImg}
+    />
+                      
+                      </figure>
                     <div className="card-body">
                       <h2 className="card-title">Learn Painting</h2>
                       <p>Level 1</p>
@@ -138,7 +180,15 @@ const userDashboardPage = () => {
                 <td>
 
                   <div className="card lg:card-side bg-base-100 shadow-xl">
-                    <figure><img src="guitarTeach.png" alt="guitar" className={styles.responsiveImg} /></figure>
+                    <figure>
+                    <Image
+      src="/guitarTeach.png"
+      width={500}
+      height={500}
+      alt="Picture of the guitarTeach"
+      className={styles.responsiveImg}
+    />
+                      </figure>
                     <div className="card-body">
                       <h2 className="card-title">Learn Guitar</h2>
                       <p>Level 1</p>
@@ -204,7 +254,7 @@ const userDashboardPage = () => {
               <tr>
                 <th>
 
-                  <a className="link link-primary link-hover">FAQ's</a>
+                  <a className="link link-primary link-hover">FAQs</a>
                 </th>
               </tr>
             </tbody>

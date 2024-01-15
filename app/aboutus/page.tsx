@@ -28,7 +28,7 @@ const aboutus = async () => {
     </thead>
     <tbody>
     {posts.slice(1,5).map(post=>
-      <tr>
+      <tr key={post.userId}>
         <th>{post.userId}</th>  <td>{post.body} </td>  
       </tr>
     )}
